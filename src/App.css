@@ -1,0 +1,17 @@
+body {
+  width: 100vw;
+  --cell-count: 81;
+}
+
+#root {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  background: none;
+  width: 4rem;
+  height: 4rem;
+  color: hotpink
+}

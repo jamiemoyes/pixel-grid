@@ -1,0 +1,38 @@
+.grid {
+    --gap: 0px;
+    --grid-size: 10rem;
+    --colour: hotpink;
+
+    overflow: hidden;
+    background: rgb(181, 181, 181);
+    border: solid 1px hotpink;
+    border-radius: 1rem;
+    gap: var(--gap);
+    animation: run;
+    display: grid;
+    grid-template-columns: repeat(var(--cell-count), calc(var(--grid-size) / var(--cell-count) - var(--gap)));
+    width: var(--grid-size);
+    height: var(--grid-size);
+}
+
+.populated {
+    background: var(--colour);
+    border-radius: 1rem;
+}
+
+.unpopulated {
+    background: none;
+}
+
+.mediaBox {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--colour);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'PicNic';
+}
